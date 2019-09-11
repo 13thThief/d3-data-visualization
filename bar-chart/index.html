@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="D3 Bar Chart by Manpreet Krishan">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>D3 Bar Chart</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main>
+    <div id='tooltip' class='hidden'>
+      <p>
+        <b>Date: </b><span id='data-date'></span>
+        <b>GDP: </b><span id='data-gdp'></span>
+      </p>
+    </div>
+    <div class="container">
+      <div id="title">GDP of the USA</div>
+      <div class="chart"></div>
+    </div>
+  </main>
+
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="main.js"></script>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
