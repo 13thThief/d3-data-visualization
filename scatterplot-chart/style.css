@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 1em;
+  font-family: 'Merriweather', serif;
+  line-height: 1.15;
+}
+
+button,
+input,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin:0;
+}
+
+main {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#title, #title2 {
+  margin: auto;
+  margin-top: 25px;
+  font-family: inherit;
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+}
+
+#title2 {
+  margin-top: 5px;
+  font-size: 20px;
+}
+
+.chart {
+  margin: auto;
+}
+
+.dot {
+  stroke: black;
+  opacity: 0.8;
+}
+
+#legend {
+  font: inherit;
+  font-size: 13px;
+}
+
+#tooltip {
+  position: absolute;
+  width: 200px;
+  height: auto;
+  padding: 7px;
+  text-align: center;
+  line-height: 1.6;
+  font: inherit;
+  font-size: 13px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  background-color: cornflowerblue;
+}
+
+.hidden {
+  display: none !important;
+}
