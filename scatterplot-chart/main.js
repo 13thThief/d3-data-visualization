@@ -9,8 +9,7 @@ const w = 840;
 const h = 600;
 const padding = 40;
 const color = '#006400';
-const color1 = '#f48120';
-const color2 = '#430098';
+const color1 = 'red';
 
 const svg = d3.select('.chart')
               .append('svg')
@@ -77,7 +76,7 @@ dataPromise
       .data(dataset)
       .enter()
       .append('circle')
-      .attr('fill', d => d.Doping ? 'red' : color)
+      .attr('fill', d => d.Doping ? color1 : color)
       .attr('r', radius)
       .attr('cx', (d, i) => xScale(years[i]))
       .attr('cy', (d, i) => yScale(minutes[i]) )
@@ -126,8 +125,8 @@ dataPromise
         .attr('y', 9)
         .attr('dy', 3)
         .style('text-anchor', 'end')
-        .text(d => {console.log(d); return d ? 'Riders with doping allegations'
-          : 'No doping allegations'});
+        .text(d => d ? 'Riders with doping allegations'
+          : 'No doping allegations');
 
   })
   .catch(e => {
